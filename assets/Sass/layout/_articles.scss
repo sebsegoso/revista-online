@@ -1,25 +1,24 @@
 .contenido {
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
-.listad-noticias {
-    width: 700px;
-    float: left;
-}
-
-.noticia {
+.news-section {
+  width: 700px;
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  &__news-item {
     width: 210px;
-    display: inline-block;
-    margin: 5px;
-    cursor: pointer;
-}
-
-.cuerpo img {
-    width: 210px;
-    height: 300px;
-}
-
-.cuerpo p {
-    padding: 5px 10px;
+    
+  }
+  &__body {
+    &__image {
+      width: 100%;
+    }
+    &__text {        
+      padding: 5px 0;
+    }
+  }
 }
