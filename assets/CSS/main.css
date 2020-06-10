@@ -8,7 +8,7 @@ img {
 }
 
 body {
-  font-family: monospace;
+  font-family: "Overpass Mono", monospace;
 }
 
 h2 {
@@ -252,14 +252,17 @@ h2 {
   text-transform: uppercase;
 }
 .header__nav {
-  width: 40%;
+  width: 100%;
   text-align: right;
 }
 .header__nav__list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+}
+.header__nav__list-item {
+  padding: 0 10px;
 }
 .header__nav__list-item a {
   text-decoration: none;
