@@ -1,0 +1,23 @@
+//SSO June,2020.
+//Abstracts
+@import 'abstracts/variables'; 
+@import 'abstracts/mixins';
+//Vendors
+//Base
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+//Layout
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/articles';
+@import 'layout/about-us';
+@import 'layout/tags';
+@import 'layout/featured';
+@import 'layout/newsletter';
+@import 'layout/footer';
+//Components
+@import 'components/buttons';
+@import 'components/inputs';
+//Pages
+//Themes
