@@ -324,34 +324,37 @@ h2 {
 }
 
 .newsletter {
-  width: 960px;
+  width: 100%;
   background-color: #f2f4f5;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.group input,
-.group button {
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter__group__button {
+  background-color: coral;
+  color: #fff;
   display: inline-block;
   border-width: 0;
   font-size: 13px;
   padding: 5px 10px;
 }
 
-.footer {
-  width: 960px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.group button {
-  background-color: coral;
-  color: white;
-}
-
-.input-menu {
+.header__nav__input-menu {
   border-radius: 30px;
+}
+
+.newsletter__group__input {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

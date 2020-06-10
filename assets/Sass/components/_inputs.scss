@@ -1,3 +1,18 @@
-.input-menu {
-    border-radius: 30px;
+.header {
+  &__nav {
+    &__input-menu {
+      border-radius: 30px;
+    }
+  }
+}
+
+.newsletter {
+  &__group {
+    &__input {
+      display: inline-block;
+      border-width: 0;
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+  }
 }
