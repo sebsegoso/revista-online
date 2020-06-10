@@ -5,20 +5,19 @@
     <title>Desafio</title>
     <!-- Normalize 8.0.1 -->
     <link rel="stylesheet" href="assets/CSS/normalize-8.0.1.css" />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/CSS/style.css" />
     <!-- Compiled CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
 
   <body>
-    <div class="contenedor">
-      <header class="menu">
-        <div class="logo">Diario</div>
-        <nav class="nav">
-          <ul>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Contacto</a></li>
+    <div class="wrapper">
+      <!-- Header  -->
+      <header class="header">
+        <div class="header__logo">Diario</div>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li class="header__nav__list-item nosotros"><a href="">Nosotros</a></li>
+            <li class="header__nav__list-item contacto"><a href="">Contacto</a></li>
             <li>
               <input
                 class="input-menu"
@@ -30,8 +29,10 @@
           </ul>
         </nav>
       </header>
+      <!--Articles  -->
       <section class="contenido">
         <div class="listad-noticias">
+          <!--Art. 1-->
           <article class="noticia">
             <div class="cabecera">
               <h2>
@@ -45,6 +46,7 @@
               </p>
             </div>
           </article>
+          <!--Art. 2-->
           <article class="noticia">
             <div class="cabecera">
               <h2>
@@ -58,7 +60,8 @@
               </p>
             </div>
           </article>
-          <div class="noticia">
+          <!--Art. 3-->
+          <article class="noticia">
             <div class="cabecera">
               <h2>
                 Lorem ipsum dolor sit amet,
@@ -70,8 +73,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
             </div>
-          </div>
-          <div class="noticia">
+          </article>
+          <!--Art. 4-->
+          <article class="noticia">
             <div class="cabecera">
               <h2>
                 Lorem ipsum dolor sit amet,
@@ -83,8 +87,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
             </div>
-          </div>
-          <div class="noticia">
+          </article>
+          <!--Art. 5-->
+          <article class="noticia">
             <div class="cabecera">
               <h2>
                 Lorem ipsum dolor sit amet,
@@ -96,8 +101,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
             </div>
-          </div>
-          <div class="noticia">
+          </article>
+          <!--Art. 6-->
+          <article class="noticia">
             <div class="cabecera">
               <h2>
                 Lorem ipsum dolor sit amet,
@@ -109,9 +115,11 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
             </div>
-          </div>
+          </article>
         </div>
+        <!--Aside-->
         <aside class="listado-izquierdo">
+          <!--About us-->
           <div class="cabecera-listado">
             <h1>Nosotros</h1>
             <p>
@@ -121,6 +129,7 @@
               nisi ut aliquip ex ea commodo
             </p>
           </div>
+          <!--tags-->
           <div class="tags">
             <h1>Tags</h1>
             <ul>
@@ -129,6 +138,7 @@
               <li>Comida</li>
             </ul>
           </div>
+          <!--Featured-->
           <div class="noticias-destacadas">
             <h1>Destacados</h1>
             <div class="item">
@@ -146,6 +156,7 @@
           </div>
         </aside>
       </section>
+      <!--newsletter-->
       <div class="newsletter">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -156,6 +167,7 @@
           <input type="text" name="" /><button>Suscríbete</button>
         </div>
       </div>
+      <!--Footer-->
       <footer class="footer">
         <p>Todos los derechos reservados</p>
       </footer>

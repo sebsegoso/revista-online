@@ -1,4 +1,4 @@
-.contenedor {
+.wrapper {
   width: 960px;
   margin: 0 auto;
 }
@@ -233,26 +233,31 @@ h2 {
     grid-column: span 1;
   }
 }
-.menu {
-  width: 960px;
+.header {
+  box-sizing: border-box;
+  width: 100%;
   padding: 10px;
   border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.logo {
+.header__logo {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  display: inline-block;
 }
-
-.nav {
-  display: inline-block;
-  width: 840px;
+.header__nav {
+  width: 40%;
   text-align: right;
 }
-
-.nav ul li a {
+.header__nav__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav__list-item a {
   text-decoration: none;
   text-transform: uppercase;
 }

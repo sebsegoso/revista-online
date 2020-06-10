@@ -1,25 +1,28 @@
-.menu {
-    width: 960px;
+.header {
+    box-sizing: border-box;
+    width: 100%;
     padding: 10px;
-    border-bottom: 1px solid gray
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.nav {
-    display: inline-block;
-    width: 840px;
-    text-align: right;
-}
-
-
-
-.nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
+    border-bottom: 1px solid gray;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;          
+    }    
+    &__nav {   
+        width: 40%;
+        text-align: right;
+        &__list{
+            list-style-type: none;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            &-item a {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
