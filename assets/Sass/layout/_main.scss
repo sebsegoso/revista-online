@@ -13,8 +13,6 @@
 
 // ARTICLES SECTION //
 
-
-
 // ASIDE SECTION //
 .listado-izquierdo {
   display: none;
@@ -35,31 +33,27 @@
 
   .tags {
     border-bottom: 1px solid $gray;
-  }
-
-  .tags ul {
-    padding: 0;
-    list-style: none;
-  }
-
-  .tags ul li {
-    padding: 2px 4px;
-    background-color: $steelblue;
-    margin-right: 1px;
-    color: $white;
-    display: inline;
-    line-height: 25px;
-    &:hover {
-      background-color: $coral;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 2px 4px;
+        background-color: $steelblue;
+        margin-right: 1px;
+        color: $white;
+        display: inline;
+        line-height: 25px;
+        &:hover {
+          background-color: $coral;
+        }
+      }
     }
   }
 
   .noticias-destacadas {
-    margin-bottom: 50px;
-  }
-
-  .noticias-destacadas img {
-    width: 100%;
-    height: 200px;
+    img {
+      width: 100%;
+      height: 200px;
+    }
   }
 }

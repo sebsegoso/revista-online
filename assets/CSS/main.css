@@ -291,12 +291,10 @@ h2 {
   .tags {
     border-bottom: 1px solid gray;
   }
-
   .tags ul {
     padding: 0;
     list-style: none;
   }
-
   .tags ul li {
     padding: 2px 4px;
     background-color: steelblue;
@@ -307,10 +305,6 @@ h2 {
   }
   .tags ul li:hover {
     background-color: coral;
-  }
-
-  .noticias-destacadas {
-    margin-bottom: 50px;
   }
 
   .noticias-destacadas img {
