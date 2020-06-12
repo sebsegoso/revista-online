@@ -21,6 +21,7 @@
       align-items: center;
       &-item {
         padding: 0 10px;
+        
         a {
           text-decoration: none;
           text-transform: uppercase;
@@ -28,4 +29,38 @@
       }
     }
   }
+@media only screen and (max-width: 767px){
+  .nosotros{
+    display:none;
+  }
+}
+@media only screen and (min-width: 1200px){
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid $gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    font-size: 24px;
+    
+  }
+  &__nav {
+    width: 100%;
+    text-align: right;
+    &__list {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      &-item {
+        padding: 0 10px;
+        
+      }
+    }
+  }
+}
+}
 }

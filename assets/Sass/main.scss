@@ -9,12 +9,13 @@
 @import 'base/typography';
 //Layout
 @import 'layout/grid';
+@import 'layout/main';
 @import 'layout/header';
-@import 'layout/articles';
-@import 'layout/side-section';
 @import 'layout/newsletter';
 @import 'layout/footer';
 //Components
+@import 'components/news-item';
+@import 'components/nav';
 @import 'components/buttons';
 @import 'components/inputs';
 //Pages

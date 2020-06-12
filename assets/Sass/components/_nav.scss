@@ -1,0 +1,32 @@
+.header__nav {
+  width: 100%;
+  text-align: right;
+  &__input-menu {
+    border-radius: 30px;
+    width: 100%;
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &-item {
+      padding: 0 10px;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.nosotros {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .nosotros {
+    display: block;
+  }
+}
