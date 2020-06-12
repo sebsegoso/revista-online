@@ -6,10 +6,8 @@
 
 @media only screen and (min-width: 992px) {
   .contenido {
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: "articles aside";
     grid-template-columns: 3fr 1fr;
+    grid-template-areas: "articles aside";
   }
 }
 
@@ -49,6 +47,8 @@
     background-color: $steelblue;
     margin-right: 1px;
     color: $white;
+    display: inline;
+    line-height: 25px;
     &:hover {
       background-color: $coral;
     }
