@@ -323,12 +323,12 @@ p {
     text-indent: 10%;
   }
   .tags ul li {
-    padding: 2px 4px;
+    padding: 0.125rem 0.25rem;
     background-color: steelblue;
     margin-right: 1px;
     color: #fff;
     display: inline;
-    line-height: 25px;
+    line-height: 1.5625rem;
   }
   .tags ul li:hover {
     background-color: coral;
@@ -337,7 +337,7 @@ p {
 .header {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
@@ -353,8 +353,8 @@ p {
   width: 100%;
   background-color: #f2f4f5;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 
 .footer {
@@ -370,11 +370,11 @@ p {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 10px 40px;
+  padding: 0.625rem 2.5rem;
   border-radius: 25px;
 }
 .card-item:hover {
-  box-shadow: 0px 0px 5px gray;
+  box-shadow: 0rem 0rem 0.3125rem gray;
   transition: box-shadow 0.7s, background-color 0.5s;
   background-color: #f2f4f5;
 }
@@ -385,9 +385,14 @@ p {
   width: 100%;
 }
 .card-item__body__text {
-  padding: 5px 0;
+  padding: 0.3125rem 0;
 }
 
+@media (min-width: 992px) {
+  .card-item {
+    padding: 0.625rem 5%;
+  }
+}
 .noticias-destacadas img {
   width: 100%;
 }
@@ -412,10 +417,10 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 0.9375rem;
 }
 .header__nav__list-item {
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 .header__nav__list-item a {
   text-decoration: none;
@@ -439,8 +444,8 @@ button {
   background-color: coral;
   color: #fff;
   border-width: 0;
-  font-size: 13px;
-  padding: 5px 10px;
+  font-size: 0.8125em;
+  padding: 0.3125rem 0.625rem;
   text-decoration: none;
 }
 
@@ -461,7 +466,7 @@ button {
   .news-section__button:hover {
     background-color: steelblue;
     color: #fff;
-    transition: background-color 0.5s;
+    transition: background-color 0.75s;
   }
 }
 .newsletter__group {
@@ -476,7 +481,7 @@ button {
 .newsletter__group__input {
   display: inline-block;
   border-width: 0;
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   color: gray;
 }
 

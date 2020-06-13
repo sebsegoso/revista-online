@@ -40,12 +40,12 @@
         text-indent: 10%;
       }
       li {
-        padding: 2px 4px;
+        padding: 0.125rem 0.25rem;
         background-color: $steelblue;
         margin-right: 1px;
         color: $white;
         display: inline;
-        line-height: 25px;
+        line-height: 1.5625rem;
 
         &:hover {
           background-color: $coral;
