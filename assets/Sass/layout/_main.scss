@@ -11,7 +11,12 @@
   }
 }
 
-// ARTICLES SECTION //
+// NEWS SECTION //
+@media only screen and (min-width: 992px){
+  .news-section{
+  grid-template-rows: 50% 50%;
+}
+}
 
 // ASIDE SECTION //
 .listado-izquierdo {
@@ -36,6 +41,9 @@
     ul {
       padding: 0;
       list-style: none;
+      & {
+        text-indent: 10%;
+      }
       li {
         padding: 2px 4px;
         background-color: $steelblue;
@@ -43,6 +51,7 @@
         color: $white;
         display: inline;
         line-height: 25px;
+
         &:hover {
           background-color: $coral;
         }
@@ -50,10 +59,5 @@
     }
   }
 
-  .noticias-destacadas {
-    img {
-      width: 100%;
-      height: 200px;
-    }
-  }
+  
 }

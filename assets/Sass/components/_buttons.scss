@@ -1,12 +1,39 @@
+button {
+  background-color: $coral;
+  color: $white;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+
+.news-section__button {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .news-section__button {
+    display: block;
+    background-color: $anti-flash-white;
+    color: $black;
+    border-radius: 25px;
+    &:hover{
+      background-color: $gray;
+      color: $white;
+    }
+  }
+}
+
 .newsletter {
   &__group {
+    display: flex;
+    justify-content: center;
     &__button {
-      background-color: $coral;
-      color: $white;
-      display: inline-block;
-      border-width: 0;
-      font-size: 13px;
-      padding: 5px 10px;
+      
+      &:hover{
+        background-color: $steelblue;
+      }
     }
   }
 }

@@ -2,6 +2,11 @@ img {
   max-width: 100%;
 }
 
+.wrapper {
+  width: 99%;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Overpass Mono", monospace;
 }
@@ -271,6 +276,11 @@ h2 {
     grid-template-areas: "articles aside";
   }
 }
+@media only screen and (min-width: 992px) {
+  .news-section {
+    grid-template-rows: 50% 50%;
+  }
+}
 .listado-izquierdo {
   display: none;
 }
@@ -295,6 +305,9 @@ h2 {
     padding: 0;
     list-style: none;
   }
+  .tags ul {
+    text-indent: 10%;
+  }
   .tags ul li {
     padding: 2px 4px;
     background-color: steelblue;
@@ -305,11 +318,6 @@ h2 {
   }
   .tags ul li:hover {
     background-color: coral;
-  }
-
-  .noticias-destacadas img {
-    width: 100%;
-    height: 200px;
   }
 }
 .header {
@@ -390,19 +398,36 @@ h2 {
   text-align: center;
 }
 
-.news-section__news-item {
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 20px;
+  padding: 10px 40px;
+  border-radius: 25px;
 }
-.news-section__body {
+.card-item:hover {
+  box-shadow: 0px 0px 5px gray;
+  transition: box-shadow 0.7s;
+  background-color: #f2f4f5;
+}
+.card-item__body {
   width: 100%;
 }
-.news-section__body__image {
+.card-item__body__image {
   width: 100%;
 }
-.news-section__body__text {
+.card-item__body__text {
   padding: 5px 0;
+}
+
+.noticias-destacadas img {
+  max-height: 100%;
+}
+.noticias-destacadas .card-item {
+  padding: 0;
 }
 
 .header__nav {
@@ -436,13 +461,37 @@ h2 {
     display: block;
   }
 }
-.newsletter__group__button {
+button {
   background-color: coral;
   color: #fff;
-  display: inline-block;
   border-width: 0;
   font-size: 13px;
   padding: 5px 10px;
+  text-decoration: none;
+}
+
+.news-section__button {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .news-section__button {
+    display: block;
+    background-color: #f2f4f5;
+    color: #020202;
+    border-radius: 25px;
+  }
+  .news-section__button:hover {
+    background-color: gray;
+    color: #fff;
+  }
+}
+.newsletter__group {
+  display: flex;
+  justify-content: center;
+}
+.newsletter__group__button:hover {
+  background-color: steelblue;
 }
 
 .newsletter__group__input {
@@ -450,6 +499,7 @@ h2 {
   border-width: 0;
   font-size: 13px;
   padding: 5px 10px;
+  color: gray;
 }
 
 /*# sourceMappingURL=main.css.map */
