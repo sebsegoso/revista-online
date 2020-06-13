@@ -4,12 +4,11 @@
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
-  width: 100%;
-  
-  padding: 10px 40px;
+  width: 100%;  
+  padding: 0.625rem 1.875rem;
   border-radius: 25px;
   &:hover {
-    box-shadow: 0px 0px 5px $gray;
+    box-shadow: 0rem 0rem 0.3125rem $gray;
     transition: box-shadow 0.7s , background-color .5s;
     background-color: $anti-flash-white;
   }
@@ -20,16 +19,21 @@
       width: 100%;
     }
     &__text {
-      padding: 5px 0;
+      padding: 0.3125rem 0;
     }
   }
 }
 
+@media (min-width: 992px){
+.card-item{
+  padding: 0.625rem 0.9375rem;
+}
+}
 .noticias-destacadas {
   img {
     width: 100%;
     &:hover{
-      border-radius: 0 0 25px 25px;
+      border-radius: 0 0 1.5625rem 1.5625rem;
       transition: border-radius .7s;
     }
   }
