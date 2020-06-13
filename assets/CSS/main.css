@@ -10,8 +10,29 @@ body {
   font-family: "Overpass Mono", monospace;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.header__logo {
   font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header__nav__list-item {
+  font-size: 1em;
+}
+
+.newsletter__group__input {
+  font-size: 0.8125em;
 }
 
 .row {
@@ -275,11 +296,6 @@ h2 {
     grid-template-areas: "articles aside";
   }
 }
-@media only screen and (min-width: 992px) {
-  .news-section {
-    grid-template-rows: 50% 50%;
-  }
-}
 .listado-izquierdo {
   display: none;
 }
@@ -287,7 +303,6 @@ h2 {
 @media (min-width: 992px) {
   .listado-izquierdo {
     padding: 0 10%;
-    height: 1445px;
     grid-area: aside;
     display: block;
   }
@@ -328,61 +343,12 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-.header__logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.header__nav {
-  width: 100%;
-  text-align: right;
-}
-.header__nav__list {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.header__nav__list-item {
-  padding: 0 10px;
-}
-.header__nav__list-item a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
+
 @media only screen and (max-width: 767px) {
-  .header .nosotros {
+  .nosotros {
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .header .header {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid gray;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header .header__logo {
-    font-size: 24px;
-  }
-  .header .header__nav {
-    width: 100%;
-    text-align: right;
-  }
-  .header .header__nav__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .header .header__nav__list-item {
-    padding: 0 10px;
-  }
-}
-
 .newsletter {
   width: 100%;
   background-color: #f2f4f5;
@@ -409,7 +375,7 @@ h2 {
 }
 .card-item:hover {
   box-shadow: 0px 0px 5px gray;
-  transition: box-shadow 0.7s;
+  transition: box-shadow 0.7s, background-color 0.5s;
   background-color: #f2f4f5;
 }
 .card-item__body {
@@ -423,7 +389,11 @@ h2 {
 }
 
 .noticias-destacadas img {
-  max-height: 100%;
+  width: 100%;
+}
+.noticias-destacadas img:hover {
+  border-radius: 0 0 25px 25px;
+  transition: border-radius 0.7s;
 }
 .noticias-destacadas .card-item {
   padding: 0;
@@ -450,6 +420,7 @@ h2 {
 .header__nav__list-item a {
   text-decoration: none;
   text-transform: uppercase;
+  color: #020202;
 }
 .header__nav__list-item a:visited {
   color: #020202;
@@ -478,6 +449,9 @@ button {
 }
 
 @media (min-width: 992px) {
+  .news-section a {
+    text-decoration: none;
+  }
   .news-section__button {
     display: block;
     background-color: #f2f4f5;
@@ -485,8 +459,9 @@ button {
     border-radius: 25px;
   }
   .news-section__button:hover {
-    background-color: gray;
+    background-color: steelblue;
     color: #fff;
+    transition: background-color 0.5s;
   }
 }
 .newsletter__group {
@@ -495,12 +470,12 @@ button {
 }
 .newsletter__group__button:hover {
   background-color: steelblue;
+  transition: background-color 0.5s;
 }
 
 .newsletter__group__input {
   display: inline-block;
   border-width: 0;
-  font-size: 13px;
   padding: 5px 10px;
   color: gray;
 }

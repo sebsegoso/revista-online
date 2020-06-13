@@ -7,20 +7,25 @@ button {
   text-decoration: none;
 }
 
-
 .news-section__button {
   display: none;
 }
 
 @media (min-width: 992px) {
-  .news-section__button {
-    display: block;
-    background-color: $anti-flash-white;
-    color: $black;
-    border-radius: 25px;
-    &:hover{
-      background-color: $gray;
-      color: $white;
+  .news-section {
+    a{
+      text-decoration: none;
+    }
+    &__button {
+      display: block;
+      background-color: $anti-flash-white;
+      color: $black;
+      border-radius: 25px;
+      &:hover {
+        background-color: $steelblue;
+        color: $white;
+        transition: background-color .5s;
+      }
     }
   }
 }
@@ -30,9 +35,9 @@ button {
     display: flex;
     justify-content: center;
     &__button {
-      
-      &:hover{
+      &:hover {
         background-color: $steelblue;
+        transition: background-color .5s;
       }
     }
   }
