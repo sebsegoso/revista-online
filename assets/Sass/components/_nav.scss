@@ -3,7 +3,7 @@
   text-align: right;
   &__input-menu {
     border-radius: 30px;
-    width: 100%;
+    width: 100%;  
   }
   &__list {
     list-style-type: none;
@@ -12,8 +12,7 @@
     align-items: center;
     padding: 0 0.9375rem;
     &-item {
-      padding: 0 0.625rem;
-      
+      padding: 0 0.625rem;      
       a {
         text-decoration: none;
         text-transform: uppercase;
@@ -26,6 +25,7 @@
   }
 }
 
+// NOSOTROS
 .nosotros {
   display: none;
 }
